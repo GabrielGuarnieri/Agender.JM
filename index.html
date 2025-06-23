@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento - Oficina JM (Julio)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Agendamento - Oficina JM (Julio)</h2>
+  <div class="container">
+    <form action="https://formspree.io/f/xdkzlrkp" method="POST">
+      <label>Nome:
+        <input type="text" name="nome" required>
+      </label>
+      <label>Data:
+        <input type="date" name="data" id="data" required>
+      </label>
+      <label>Hora:
+        <input type="time" name="hora" required>
+      </label>
+      <label>Serviço:
+        <input type="text" name="servico" required>
+      </label>
+      <label>WhatsApp:
+        <input type="tel" name="whatsapp" id="whatsapp" required>
+      </label>
+      <input type="hidden" name="_subject" value="Novo agendamento na Oficina JM (Julio)">
+      <button type="submit">Enviar por E-mail</button>
+      <div class="erro" id="erro"></div>
+    </form>
+    <div class="calendar">
+      <h3>Calendário</h3>
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </div>
+  </div>
+  <div class="contato">
+    <p><a href="https://wa.me/5511994499358" target="_blank">📞 Fale conosco pelo WhatsApp: (11) 99449-9358</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
